@@ -26,3 +26,6 @@
 """
 
 ip = "192.168.3.1"
+octets = ip.split('.')
+result = "{0:<8}  {1:<8}  {2:<8}  {3:<8}\n{0:08b}  {1:08b}  {2:08b}  {3:08b}".format(int(octets[0]), int(octets[1]), int(octets[2]), int(octets[3]))
+print(result)

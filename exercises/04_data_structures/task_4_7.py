@@ -16,3 +16,7 @@
 """
 
 mac = "AAAA:BBBB:CCCC"
+mac = mac.split(':')
+print(str(bin(int(mac[0], 16))).replace('0b', '')
++ str(bin(int(mac[1], 16))).replace('0b', '')
++ str(bin(int(mac[2], 16))).replace('0b', ''))
